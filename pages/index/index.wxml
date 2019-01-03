@@ -1,0 +1,23 @@
+<!-- 轮播 -->
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+  circular="{{circular}}"
+>
+  <block wx:for="{{imgUrls}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 内容区 -->
+<view class='con_one'>
+  <view class='con_one_title'>第一栏</view>
+  <view class='con_one_box' wx:for="{{conImg}}" wx:key="index">
+    <image src="{{item}}"/>
+    <view class='con_one_box_right'>XXXXXX</view>
+  </view>
+</view>
