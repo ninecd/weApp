@@ -1,6 +1,9 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/shoppingCart/shoppingCart",
+    "pages/classification/classification",
+    "pages/my/my",
     "pages/logs/logs"
   ],
   "window":{
@@ -11,20 +14,32 @@
   },
   "tabBar": {
     "backgroundColor": "#fff",
-    "color": "#000000",
-    "selectedColor": "orange",
+    "color": "rgba(0,0,0,0.5)",
+    "selectedColor": "rgba(255,107,0,1)",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "",
-        "selectedColor": ""
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_sl.png"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/classification/classification",
+        "text": "分类",
+        "iconPath": "images/classification.png",
+        "selectedIconPath": "images/classification_sl.png"
+      },
+      {
+        "pagePath": "pages/shoppingCart/shoppingCart",
+        "text": "购物车",
+        "iconPath": "images/shop.png",
+        "selectedIconPath": "images/shop_sl.png"
+      },
+      {
+        "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "",
-        "selectedColor": ""
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my_sl.png"
       }
     ]
   }

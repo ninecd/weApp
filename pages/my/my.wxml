@@ -1,0 +1,18 @@
+<!--pages/my/my.wxml-->
+<view class='my_top'>
+  <view class='my_top_title'>
+    <image src='../../images/dog.png' class='title_img'></image>
+    <view class='my_top_title_center'>
+      <text>费奇里德先生</text>
+      <text class='my_setting'>设置</text>
+      <view class='my_family'>我的亲情账号 ></view>
+    </view>
+  </view>
+  <view class='my_top_features'>
+    <view class='my_top_features_one' wx:for="{{top}}" wx:key="index">
+      <text>{{item.num}}</text>
+      <view>{{item.name}}</view>
+    </view>
+  </view>
+  <view class='integral'></view>
+</view>
